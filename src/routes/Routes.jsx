@@ -15,7 +15,7 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "/create-job",
+                path: "/dashboard",
                 element: <h1>Job</h1>,
             },
         ]

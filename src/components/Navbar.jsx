@@ -11,14 +11,14 @@ const Navbar = () => {
                     color: isActive ? "white" : "",
                 };
             }}>Home</NavLink></li>
-            <li><NavLink to='/create-job' style={({ isActive }) => {
+            <li><NavLink to='/dashboard' style={({ isActive }) => {
                 return {
                     backgroundColor: isActive ? "teal" : "",
                     border: isActive ? "1px solid teal" : "",
                     borderRadius: isActive ? "4px" : "",
                     color: isActive ? "white" : "",
                 };
-            }}>Post Job</NavLink></li>
+            }}>Dashboard</NavLink></li>
 
         </>
     return (

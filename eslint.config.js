@@ -10,7 +10,7 @@ export default [
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: { ...globals.browser, ...globals.node },  // add this golobals.node for daisyUi setup
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },

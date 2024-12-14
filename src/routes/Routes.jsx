@@ -3,6 +3,8 @@ import {
 } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
+import Dashboard from "../layouts/Dashboard";
+import AddJob from "../pages/AddJob";
 
 const router = createBrowserRouter([
     {
@@ -14,9 +16,16 @@ const router = createBrowserRouter([
                 path: "/",
                 element: <Home />,
             },
+        ]
+    },
+    {
+        path: "dashboard",
+        element: <Dashboard />,
+        errorElement: <div>Error is occurred</div>,
+        children: [
             {
-                path: "/dashboard",
-                element: <h1>Job</h1>,
+                path: "addJob",
+                element: <AddJob />,
             },
         ]
     },
